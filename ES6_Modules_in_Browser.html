@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES-6 modules script!</title>
+</head>
+<body>
+    JS script as module 
+    <script type="module">
+        import{formalGreeting} from './greetingForBrowser.js';
+        formalGreeting('maryam');
+    </script>
+    <script type="module">
+        import{informalGreeting,formalGreeting} from 'greetingForBrowser.js';
+        //import greeting() form 'greetingForBrowser.js';
+         import{greeting} from 'greetingForBrowser.js';
+        formalGreeting('saba');
+        greeting();
+    </script>
+</body>
+</html>
